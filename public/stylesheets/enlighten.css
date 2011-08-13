@@ -1,0 +1,75 @@
+body {
+  background-color: #FFF;
+  color: #000;
+  font-family: Verdana;
+  font-size: 16px;
+}
+
+#container {
+  margin: 50px 150px;
+}
+
+#side {
+  float: right;
+  margin-right: 40px;
+}
+
+.backtrace {
+  margin-top: 30px;
+}
+
+table.code {
+  margin-top: 10px;
+  border-collapse: collapse;
+}
+
+pre {
+  margin: 0;
+  padding: 0;
+}
+
+code {
+  border: solid 1px #CCC;
+  background-color: #EEE;
+  font-family: 'Menlo', 'Courier New', 'Terminal', monospace;
+  padding: 0 5px;
+}
+
+.var {
+  font-family: 'Menlo', 'Courier New', 'Terminal', monospace;
+}
+
+.code .num {
+  text-align: right;
+  padding-right: 20px;
+}
+
+.code .current td {
+  background-color: #63EF6A;
+}
+
+#not_enlightened {
+  text-align: center;
+  margin-top: 150px;
+}
+
+#prompt_section pre {
+  display: inline;
+}
+
+#prompt {
+  min-width: 400px;
+}
+
+#prompt .response {
+  color: #999;
+}
+
+#prompt_cursor {
+  vertical-align: bottom;
+  padding-bottom: 5px;
+}
+
+#prompt_field {
+  width: 300px;
+}
