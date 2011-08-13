@@ -5,9 +5,6 @@ Enlighten::Application.initialize!
 if Enlighten::Application.env == 'development'
   use AsyncRack::CommonLogger
 
-  # Enable code reloading on every request
-  use Rack::Reloader, 0
-
   # Serve javascripts and stylesheets from from /public
   use Rack::Static, :urls => ["/javascripts", "/stylesheets"], :root => Enlighten::Application.root(:public)
 end

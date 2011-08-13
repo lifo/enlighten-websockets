@@ -5,7 +5,8 @@ class DebuggingAction < Cramp::Websocket
   on_data :received_data
 
   def received_data(data)
-    render @debugger.eval_code(data)
+    result = @debugger.respond_to?(data) ? @debugger.send(data) : @debugger.eval_code(data)
+    render result
   end
 
 end
