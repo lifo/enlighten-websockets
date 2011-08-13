@@ -1,6 +1,6 @@
 source :rubygems
 
-gem 'cramp', :git => 'git@github.com:lifo/cramp.git'
+gem 'cramp', '~> 0.15'
 
 # Async webserver for running a cramp application
 gem 'thin'
